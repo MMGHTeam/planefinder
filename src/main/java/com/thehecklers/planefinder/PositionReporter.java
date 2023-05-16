@@ -18,7 +18,7 @@ public class PositionReporter {
         return () -> {
             try {
                 return pfService.getAircraft();
-            }catch (IOException e){
+            } catch (IOException e){
                     e.printStackTrace();
             }
             return List.of();
